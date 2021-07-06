@@ -1,3 +1,5 @@
+# Single Responsibility Principle
+
 # Milkman
 
 We would like to help our milkman in delivery.
@@ -8,3 +10,8 @@ We would like to help our milkman in delivery.
 - Each house in the street provides the number of milk packs needed.
 - Our Milkman in the morning delivers the order to each house.
 
+## Step 2
+- We are delivering 3 different type of milk
+- Cow, Goat & Soya
+- House can choose the milk type
+  
