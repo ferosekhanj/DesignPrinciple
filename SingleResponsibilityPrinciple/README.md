@@ -23,4 +23,5 @@ We would like to help our milkman in delivery.
 - we are discontinuing the vegan milk
 - we are expanding our business and would like to deliver Choclates and Biscut orders with the milk
 
-  
+## Step 5
+- We are switching to a prepaid model, before delivery, the milk man checks whether there is enough money available in the customer wallet. If balance is less then no delivery is made.  
