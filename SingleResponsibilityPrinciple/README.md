@@ -15,3 +15,6 @@ We would like to help our milkman in delivery.
 - Cow, Goat & Soya
 - House can choose the milk type
   
+## Step 3
+- A house can order a combination of milk daily.
+  
