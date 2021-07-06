@@ -17,4 +17,10 @@ We would like to help our milkman in delivery.
   
 ## Step 3
 - A house can order a combination of milk daily.
+
+## Step 4
+- we added a new milk variety camel milk
+- we are discontinuing the vegan milk
+- we are expanding our business and would like to deliver Choclates and Biscut orders with the milk
+
   
