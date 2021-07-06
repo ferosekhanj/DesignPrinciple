@@ -9,7 +9,20 @@ namespace SingleResponsibilityPrinciple
         {
             balance = initialAmount;
         }
-        public void AddMoney(int amount)=> balance = balance + amount - debt;
+        public void AddMoney(int amount)
+        {
+            balance = balance + amount;
+            if(debt > balance)
+            {
+                debt = debt - balance;
+                balance = 0;
+            }
+            else
+            {
+                balance = balance - debt;
+                debt = 0;    
+            }
+        }
         
         public bool GetPayment(int orderAmount)
         {

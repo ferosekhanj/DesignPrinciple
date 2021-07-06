@@ -31,7 +31,7 @@ We would like to help our milkman in delivery.
 
 ## Step 6
 - We are going to allow the customer to order custom quantity of milk (500ml,1000ml,200ml)
-- We would like to deliver the order if half of the cost is available in the wallet and mark the reamining as debt (as a good gesture)
+- We would like to deliver the order if half of the cost is available in the wallet and mark the remaining as debt (as a good gesture)
 
 
 - [Developer]Wait, we need some time to speed up 
