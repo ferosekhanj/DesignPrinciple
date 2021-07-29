@@ -1,4 +1,4 @@
-# Principle of least surprise
+# Principle Of Least Astonishment
 
 ## Transcript for the video.
 
