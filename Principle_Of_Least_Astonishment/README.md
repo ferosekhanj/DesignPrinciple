@@ -1,6 +1,6 @@
 # Principle of least surprise
 
-Transcript for the video.
+## Transcript for the video.
 
 Hello everyone in this video I'll explain the principle of least astonishment or principle of least surprise.
 
