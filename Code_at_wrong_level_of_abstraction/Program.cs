@@ -7,5 +7,5 @@
 }
 catch(System.InvalidOperationException)
 {
-    System.Console.WriteLine("Please replace cartridge.");
+    System.Console.WriteLine("Error: Unable to print");
 }
