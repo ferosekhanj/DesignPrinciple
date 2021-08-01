@@ -14,4 +14,6 @@ public class RibbonCartridge
             throw new InvalidOperationException("Cartridge empty");
         AvailableCount-=count;
     }
+
+    public bool IsEmpty()=> AvailableCount == 0;
 }

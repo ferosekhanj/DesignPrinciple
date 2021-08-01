@@ -16,4 +16,6 @@ public class DotMatrixPrinter : IPrinter
         WriteLine($"Cancelled Job {jobId}");
         return true;
     }
+
+    public bool IsCartridgeEmpty()=>cartridge.IsEmpty();
 }

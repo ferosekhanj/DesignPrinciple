@@ -5,4 +5,5 @@ public interface IPrinter
     void PowerOff();
     int Submit(PrintJob job);
     bool Cancel(int jobId);
+    bool IsCartridgeEmpty();
 }
