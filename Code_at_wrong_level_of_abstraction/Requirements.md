@@ -19,5 +19,10 @@
 - We are adding a new printer to our product line.
 - It is based on ink jet technology.
 - Users have to buy CMY & Black Cartridges.
-- Since time to market is important we will reuse the driver with minimal changes.
+- Since time to market is important, we will reuse the driver with minimal changes.
 
+## Iteration 4
+- We are adding a new printer to our product line.
+- This is for our volume customers.
+- Users have to refill the ink tank.
+- Again time to market is important, we will reuse the driver with minimal changes. 

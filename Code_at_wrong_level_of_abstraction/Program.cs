@@ -1,6 +1,6 @@
 ﻿try
 {
-    IPrinter tvs = new InkjetPrinter();
+    IPrinter tvs = new EcoTankPrinter();
 
     PrinterDriver driver = new PrinterDriver(tvs);
     driver.Run();
