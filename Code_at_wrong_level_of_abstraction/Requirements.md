@@ -14,3 +14,10 @@
 
 - We hear lot of feedback from users about the cartridge exhaustion error.
 - We would like to give a notification to users the cartridge is empty.
+
+## Iteration 3
+- We are adding a new printer to our product line.
+- It is based on ink jet technology.
+- Users have to buy CMY & Black Cartridges.
+- Since time to market is important we will reuse the driver with minimal changes.
+

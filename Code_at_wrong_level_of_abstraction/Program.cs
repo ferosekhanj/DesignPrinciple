@@ -1,6 +1,6 @@
 ﻿try
 {
-    IPrinter tvs = new DotMatrixPrinter();
+    IPrinter tvs = new InkjetPrinter();
 
     PrinterDriver driver = new PrinterDriver(tvs);
     driver.Run();
