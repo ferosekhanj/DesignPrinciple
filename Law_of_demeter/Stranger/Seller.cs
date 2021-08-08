@@ -14,9 +14,10 @@ namespace Stranger
             Price = price;
         }
 
-        public void Sell(Family family) 
+        public void Sell(IFamilyCustomer family) 
         {
             Console.WriteLine($"Attempt to sell {Item} for {Price}");
+
             if (SellItem(family))
             {
                 PrintBill(family, Item, Price);
@@ -27,17 +28,17 @@ namespace Stranger
             }
         }
 
-        bool SellItem(Family family)
+        bool SellItem(IFamilyCustomer family)
         {
-            return family.RequestPayment(Item,Price) > 0;
+            return family.RequestPayment(Item, Price) > 0;
         }
 
-        void PrintBill(Family family,string item, int price)
+        void PrintBill(IFamilyCustomer family,string item, int price)
         {
             Console.WriteLine($"=====\nBill:\nBill To:{family.FatherName.First}\n{family.Address}\nItem:\n{item}\t{price}\n");
         }
 
-        void PrintWish(Family family)
+        void PrintWish(IFamilyCustomer family)
         {
             Console.WriteLine($"=====\nNo sale:\n See you next time {family.FatherName.First}");
         }

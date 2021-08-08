@@ -10,6 +10,8 @@ namespace Law_of_demeter
         static void Main(string[] args)
         {
             Family f = new Family(new Name("John","Doe"), new Name("Jane", "Doe"), new Address("21", "Beach Street", "Begur", "500001"));
+            f.AddChild(new Name("Katy","Doe"));
+            f.AddChild(new Name("Leo", "Doe"));
 
             Seller s1 = new Seller("red balloon",10);
             s1.Sell(f);
