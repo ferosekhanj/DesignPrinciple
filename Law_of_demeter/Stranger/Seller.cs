@@ -30,7 +30,7 @@ namespace Stranger
 
         bool SellItem(IFamilyCustomer family)
         {
-            return family.RequestPayment(Item, Price) > 0;
+            return family.RequestPayment(Item, Price) == Price;
         }
 
         void PrintBill(IFamilyCustomer family,string item, int price)
