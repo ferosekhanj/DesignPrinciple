@@ -30,7 +30,8 @@ namespace Stranger
 
         bool SellItem(IFamilyCustomer family)
         {
-            return family.RequestPayment(Item, Price) == Price;
+            // AVOID doing such implementation, it breaks law of demeter
+            return family.Children[0].Tempt(Item, Price) == Price;
         }
 
         void PrintBill(IFamilyCustomer family,string item, int price)
