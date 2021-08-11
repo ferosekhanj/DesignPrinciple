@@ -1,6 +1,8 @@
 # Law Of Demeter (Principle of Least Knowledge)
 ## Transcript for the video
 
+Video available in my channel https://www.youtube.com/c/FeroseKhanj
+
 Hello everyone, welcome to another video. In this video we will look at law of Demeter, also called as principal of least knowledge.
 What is law of Demeter? It states the method of an object should invoke only the methods of the following kind of objects.
 Itself.
