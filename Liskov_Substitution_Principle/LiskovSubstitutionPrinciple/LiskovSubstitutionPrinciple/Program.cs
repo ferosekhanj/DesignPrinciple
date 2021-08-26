@@ -1,7 +1,6 @@
 ﻿using LiskovSubstitutionPrinciple.Actors;
 using LiskovSubstitutionPrinciple.System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace LiskovSubstitutionPrinciple
 {
@@ -11,9 +10,10 @@ namespace LiskovSubstitutionPrinciple
         {
             var staffs = new List<Staff>()
             {
-                new Cleaner("c1", new System.StaffCard(1,true,100)),
-                new Teacher("t1", new System.StaffCard(2, true, 500)),
-                new Security("s1", new System.StaffCard(3, true, 300)),
+                new Cleaner("c1", new StaffCard(1,true,100)),
+                new Teacher("t1", new StaffCard(2, true, 500)),
+                new Security("s1", new StaffCard(3, true, 300)),
+                new Visitor("John Doe", new VisitorCard(1001))
             };
 
             var canteen = new Canteen();

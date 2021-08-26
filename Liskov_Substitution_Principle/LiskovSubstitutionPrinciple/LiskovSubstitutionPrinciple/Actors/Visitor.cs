@@ -5,17 +5,18 @@ namespace LiskovSubstitutionPrinciple.Actors
 {
     class Visitor : Staff
     {
-        public Visitor(string name)
+        VisitorCard myIdCard;
+        public Visitor(string name,VisitorCard idCard)
         {
-            RollNumber = -1;
-            IsActive = true;
+            myIdCard = idCard;
+            RollNumber = idCard.RollNumber;
+            IsActive = idCard.IsActive;
             Name = name;
         }
 
         public override void ChargeExpense(decimal amount)
         {
-            //do nothing
-            Console.WriteLine("I don't have a means to pay.");
+            myIdCard.AddDebt(amount);
         }
 
     }
