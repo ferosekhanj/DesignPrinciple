@@ -14,5 +14,13 @@ namespace Open_Closed_Principle
         {
             WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} {person.HostContactNumber}");
         }
+        public void Register(ServicePerson person)
+        {
+            WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} {person.HostContactNumber} to service {person.ServiceInfo}");
+        }
+        public void Register(Driver person)
+        {
+            WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} {person.HostContactNumber} to drive {person.VehicleNumber}");
+        }
     }
 }
