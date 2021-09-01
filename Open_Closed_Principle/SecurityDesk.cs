@@ -10,17 +10,9 @@ namespace Open_Closed_Principle
             Name = name;
             WriteLine($"Security: {Name} open...");
         }
-        public void Register(Guest person)
+        public void Register(Visitor person)
         {
-            WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} {person.HostContactNumber}");
-        }
-        public void Register(ServicePerson person)
-        {
-            WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} {person.HostContactNumber} to service {person.ServiceInfo}");
-        }
-        public void Register(Driver person)
-        {
-            WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} {person.HostContactNumber} to drive {person.VehicleNumber}");
+            WriteLine($"{person.Name} with {person.ContactNumber} came to meet {person.HostName} with {person.HostContactNumber} for {person.Purpose}");
         }
     }
 }
