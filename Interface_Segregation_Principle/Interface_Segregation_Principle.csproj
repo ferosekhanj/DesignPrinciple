@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Interface_Segregation_Principle.pptx" />
+    <None Remove="~%24Interface_Segregation_Principle.pptx" />
+  </ItemGroup>
+
+</Project>
