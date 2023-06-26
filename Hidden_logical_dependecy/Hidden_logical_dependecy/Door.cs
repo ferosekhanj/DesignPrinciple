@@ -7,22 +7,22 @@
     {
         public bool Locked { get; private set; }
 
-        public bool ChildLock { get; set; }
-
         public Door()
         {
             Locked = true;
-            ChildLock = false;
         }
 
-        public void Open(bool fromInside)
+        public void OpenFromInside(bool childLock)
         {
-            if(fromInside && ChildLock)
+            if(childLock)
             {
                 return;
             }
             Locked = false;
         }
+
+        public void OpenFromOutside() => Locked = false;
+
         public void Close() => Locked = true;
 
     }
