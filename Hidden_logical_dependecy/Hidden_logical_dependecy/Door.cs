@@ -7,22 +7,43 @@
     {
         public bool Locked { get; private set; }
 
+        public bool ChildLock { get; private set; }
+
         public Door()
         {
             Locked = true;
         }
 
-        public void OpenFromInside(bool childLock)
+        /// <summary>
+        /// Activate the child lock. And prevent the door from being opened from inside.
+        /// </summary>
+        public void ActivateChildLock() => ChildLock = true;
+
+        /// <summary>
+        /// Deactivate the child lock. And allow the door to be opened from inside.
+        /// </summary>
+        public void DeactivateChildLock() => ChildLock = false;
+
+        /// <summary>
+        /// Allows the door to be opened from inside, unless child lock is activated.
+        /// </summary>
+        public void OpenFromInside()
         {
-            if(childLock)
+            if (ChildLock)
             {
                 return;
             }
             Locked = false;
         }
 
+        /// <summary>
+        /// Allow the door to be opened from outside.
+        /// </summary>
         public void OpenFromOutside() => Locked = false;
 
+        /// <summary>
+        /// Close the door.
+        /// </summary>
         public void Close() => Locked = true;
 
     }
